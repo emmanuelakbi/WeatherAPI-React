@@ -10,14 +10,14 @@ function App() {
   const [inputValue, setInputValue] = useState("");
 
   fetch(
-    "http://api.weatherapi.com/v1/current.json?key=a5e53e808b984560bd1110948241708&q=Lagos&aqi=no"
+    "https://api.weatherapi.com/v1/current.json?key=a5e53e808b984560bd1110948241708&q=Lagos&aqi=no"
   )
     .then((response) => response.json())
     .then((data) => console.log(data));
 
   const handleButtonClick = () => {
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=a5e53e808b984560bd1110948241708&q=${inputValue}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=a5e53e808b984560bd1110948241708&q=${inputValue}&aqi=no`
     )
       .then((response) => response.json())
       .then(displayData);
