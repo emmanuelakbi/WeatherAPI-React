@@ -1,0 +1,72 @@
+.weather {
+  box-shadow: 2px 0px 44px 1px rgba(213, 213, 213, 1);
+  -webkit-box-shadow: 2px 0px 44px 1px rgba(213, 213, 213, 1);
+  -moz-box-shadow: 2px 0px 44px 1px rgba(213, 213, 213, 1);
+  border-radius: 50px;
+  background-color: white;
+  width: 90%;
+  max-width: max-content;
+  padding: 40px 40px;
+}
+
+.weather__heading-title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.weather__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px;
+  margin-bottom: 0px;
+}
+
+.weather__input-searchBox {
+  width: 75%;
+  max-width: 280px;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 50px;
+  border: 2px solid #000;
+  transition: all 200ms ease-in-out;
+}
+
+.weather__input-searchBox:is(:active, :focus-visible) {
+  outline: 1px solid #000;
+}
+
+.weather__input-searchBox::placeholder {
+  color: #000;
+}
+
+.weather__input-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 2px solid #000;
+  background-color: #fff;
+  transition: all 200ms ease-in-out;
+}
+.weather__input-button:is(:hover, :focus-visible) {
+  color: #fff;
+  background-color: #000;
+}
+
+.weather__details {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.weather__details-date {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-block-end: 16px;
+}
+
+.weather__details-temp {
+  font-size: 1rem;
+  font-weight: 300;
+}
